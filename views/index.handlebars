@@ -1,0 +1,82 @@
+<!-- Page Header -->
+<header>
+    <div class="container">
+
+        <div class="heading"> 
+            <h1>Eat Da Burger!</h1>
+            <h6><img src="img/burgers.png" alt="burger" align="middle"></h6>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 mx-auto">
+                <h2>Eat me!</h2>
+                
+                    {{#each burgers}} 
+                        {{#unless this.devoured}}
+                        
+                            <div class = "eat">
+                                {{this.name}}<br> 
+                                {{this.date}} 
+
+                                {{> devour-burger}}
+                            </div>
+                        {{/unless}} 
+                    {{/each}}
+            </div>
+
+            <div class="col-lg-6 col-md-6 mx-auto">
+                <h2>Digest Me!</h2>
+
+                    {{#each burgers}} 
+                        {{#if this.devoured}}
+                            <div class = "eat">
+                                {{this.name}}<br> 
+                                {{this.date}} 
+                                
+                                {{> delete-burger}}
+                              </div>
+                        {{/if}} 
+                    {{/each}}
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="add">
+                {{> add-burger}}
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  </span>
+                </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-github fa-stack-1x"></i>
+                  </span>
+                </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Gen 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>

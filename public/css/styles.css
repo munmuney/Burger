@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Architects+Daughter|Open+Sans|Sedgwick+Ave+Display');
+
+body {
+  margin:0 auto;
+  padding:0;
+  color: black;
+  font-family: 'Averia Sans Libre'
+}
+
+header {
+  background-color: #e5cb7a;
+  text-align: center;
+}
+
+.heading{
+  padding:20px;
+}
+
+.heading h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  font-family: 'Sedgwick Ave Display' 
+}
+
+.heading img {
+  height:20%;
+  width:20%;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: "Architects Daughter";
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+.eat {
+  background-color: lightgray;
+  margin: 5px;
+}
+
+label {
+  margin: 10px;
+}
+
+
+.add {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+ul {
+list-style-type:none;
+}
+
+footer {
+  margin: 20px; }
+  footer .list-inline {
+    margin: 0;
+    padding: 0; }
+  footer .copyright {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center; }
+
+.btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 1px 2px gray;
+  font-family: 'Averia Sans Libre', 'Open Sans' }
+
+.btn:hover {
+        background-color: darkgray;
+        cursor: pointer; 
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.fa {
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: #24292e;
+  color: white;
+}
+
+#userPhoto {
+    height: 100%;
+    width: 100%;
+  }
