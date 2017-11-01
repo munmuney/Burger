@@ -1,6 +1,6 @@
 {{!---------- Update Form ----------}}
-<form action="/{{this.id}}?_method=PUT" method="POST">
-    <input type="hidden" name="devoured" value="true">
+<form action="/burgers/update?_method=PUT" method="POST">
+	<input input type="hidden" type="text" name="burger_id" value={{this.id}}><br>
     <button type="submit">Munch Munch..</button>
 
 </form>
